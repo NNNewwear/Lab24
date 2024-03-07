@@ -1,8 +1,11 @@
 #include<iostream>
-
+#include <set>
 using namespace std;
 
-//Write function count() here.
+int count(int data[], unsigned int n) {
+  set<int> s(data, data+n);
+  return s.size();
+}
 
 int main(){	
 	int data[] = {1,2,4,5,4,8,2,1,2,4,6,1,4,4,4,2,1,0,12}; 
